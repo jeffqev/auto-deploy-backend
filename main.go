@@ -51,7 +51,7 @@ func handleResponseFecha(w http.ResponseWriter, r *http.Request) {
 	}
 
 	mensaje := Mensaje{
-		Msg:   "La fecha y hora desde la db es",
+		Msg:   "La fecha y hora desde la db es:",
 		Fecha: fecha,
 	}
 
