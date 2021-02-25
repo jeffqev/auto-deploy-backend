@@ -1,0 +1,24 @@
+version: '3'
+services:
+  backend-dep-test:
+    container_name: backend-dep-test
+    restart: always
+    image: backend-dep-test
+    environment:
+      - USER_MYSQL=root
+      - PASSWORD_MYSQL=root
+      - HOST_MYSQL=201.183.60.49:1517
+      - PORT=1323
+    build:
+      context: .
+    ports:
+      - "1541:1323"
+    networks:
+      - backend-dep-test
+networks:
+  backend-dep-test:
+
+
+  
+
+    
