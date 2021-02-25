@@ -41,7 +41,7 @@ func handleResponseFecha(w http.ResponseWriter, r *http.Request) {
 
 	if err != nil {
 		mensaje := Mensaje{
-			Msg:   "Error al consultar en la db",
+			Msg:   "Error al consultar en la db:",
 			Fecha: "",
 		}
 		w.WriteHeader(http.StatusInternalServerError)
