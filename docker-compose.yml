@@ -1,9 +1,9 @@
 version: '3'
 services:
-  backend-dep-test:
-    container_name: backend-dep-test
+  backend-jenkins-test:
+    container_name: backend-jenkins-test
     restart: always
-    image: backend-dep-test
+    image: backend-jenkins-test
     environment:
       - USER_MYSQL=root
       - PASSWORD_MYSQL=root
@@ -14,9 +14,9 @@ services:
     ports:
       - "1537:1323"
     networks:
-      - backend-dep-test
+      - backend-jenkins-test
 networks:
-  backend-dep-test:
+  backend-jenkins-test:
 
 
   
