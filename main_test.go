@@ -5,7 +5,7 @@ import (
 )
 
 func TestOk(t *testing.T) {
-	if false {
+	if true {
 		t.Errorf("prueba test error")
 	}
 }
