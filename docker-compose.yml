@@ -12,7 +12,7 @@ services:
     build:
       context: .
     ports:
-      - "1541:1323"
+      - "1537:1323"
     networks:
       - backend-dep-test
 networks:
